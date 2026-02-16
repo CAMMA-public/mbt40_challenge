@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Calendar, Trophy, Users, ArrowRight } from "lucide-react";
+import { Calendar, Trophy, Users, ArrowRight, MapPin } from "lucide-react";
 import Layout from "@/components/Layout";
 import banner from "@/assets/banner.png";
 
@@ -20,7 +20,7 @@ const Index = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
           <div className="inline-block mb-6 px-4 py-2 bg-primary/20 border border-primary/30 rounded-full">
-            <span className="text-primary text-sm font-medium">MICCAI 2026 Challenge</span>
+            <span className="text-primary text-sm font-medium">MICCAI 2026 Challenge — EndoVis</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
@@ -29,8 +29,13 @@ const Index = () => {
             <span className="text-primary">Triplet Challenge 2026</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10" style={{ animationDelay: "0.1s" }}>
-            Advancing the state-of-the-art in surgical action recognition and understanding through multi-center gastric bypass procedure analysis
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4" style={{ animationDelay: "0.1s" }}>
+            Advancing surgical action triplet recognition through multi-center Roux-en-Y gastric bypass procedure analysis
+          </p>
+
+          <p className="text-md text-muted-foreground max-w-2xl mx-auto mb-10 flex items-center justify-center gap-2">
+            <MapPin className="h-4 w-4 text-primary" />
+            October 4, 2026 — ADNEC Centre, Abu Dhabi
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center" style={{ animationDelay: "0.2s" }}>
@@ -54,36 +59,33 @@ const Index = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Feature 1 */}
             <div className="p-6 bg-secondary rounded-lg border border-border hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
                 <Trophy className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Cash Prizes</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Prizes & Publication</h3>
               <p className="text-muted-foreground">
-                Compete for significant cash prizes and recognition at MICCAI 2026
+                Compete for prizes sponsored by IHU Strasbourg and co-author a joint publication in a top medical imaging journal
               </p>
             </div>
 
-            {/* Feature 2 */}
             <div className="p-6 bg-secondary rounded-lg border border-border hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Multi-Center Dataset</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">MultiBypassT40 Dataset</h3>
               <p className="text-muted-foreground">
-                Access a unique multi-center dataset of gastric bypass surgical videos
+                40 videos across 4 centers with 85 action triplet classes — the largest multi-centric surgical triplet dataset
               </p>
             </div>
 
-            {/* Feature 3 */}
             <div className="p-6 bg-secondary rounded-lg border border-border hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
                 <Calendar className="h-6 w-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">MICCAI 2026</h3>
               <p className="text-muted-foreground">
-                Present your work at the premier medical imaging conference
+                Present your work at the premier medical imaging conference, October 4, Abu Dhabi
               </p>
             </div>
           </div>
@@ -98,9 +100,9 @@ const Index = () => {
               The Challenge Task
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Participants are tasked with developing algorithms to recognize and predict surgical action triplets 
-              (instrument, verb, target) in gastric bypass surgery videos. This challenge addresses a critical need 
-              in surgical AI: understanding the complex interplay between surgical instruments, actions, and anatomical targets.
+              Develop deep learning methods for <strong className="text-foreground">online surgical action triplet recognition</strong> (instrument, verb, target) 
+              from Roux-en-Y gastric bypass surgery videos. Models must process frames causally — no access to future frames. 
+              This challenge establishes a new research direction focused on generalization across multiple centers, organized in conjunction with EndoVis.
             </p>
             <Button variant="outline" asChild>
               <Link to="/challenge">
@@ -118,7 +120,7 @@ const Index = () => {
             Ready to Take the Challenge?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join teams from around the world in advancing surgical action understanding. Registration is now open.
+            Registration opens April 1, 2026. Join teams from around the world in advancing surgical action understanding.
           </p>
           <Button variant="hero" size="lg" asChild>
             <Link to="/submission">Register Your Team</Link>

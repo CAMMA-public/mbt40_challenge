@@ -10,10 +10,13 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <img src={logo} alt="Challenge Logo" className="h-10 w-10 object-contain" />
-              <span className="font-semibold text-foreground">MultiBypass 2026</span>
+              <span className="font-semibold text-foreground">MultiBypassT40</span>
             </div>
             <p className="text-sm text-muted-foreground">
               MultiBypass Surgical Action Triplet Challenge at MICCAI 2026
+            </p>
+            <p className="text-sm text-muted-foreground">
+              October 4, 2026 — ADNEC Centre, Abu Dhabi
             </p>
           </div>
 
@@ -40,20 +43,20 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Contact</h4>
             <p className="text-sm text-muted-foreground">
-              For inquiries, please contact us at:
+              Primary contact:
             </p>
             <a
-              href="mailto:multibypass2026@miccai.org"
+              href="mailto:ssharma@unistra.fr"
               className="text-sm text-primary hover:underline"
             >
-              multibypass2026@miccai.org
+              ssharma@unistra.fr
             </a>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © 2026 MultiBypass Surgical Action Triplet Challenge. All rights reserved.
+            © 2026 MultiBypass Surgical Action Triplet Challenge. Organized by University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg.
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ const Challenge = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-foreground mb-4">Challenge Overview</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Understanding surgical actions through action triplet recognition in gastric bypass procedures
+            Online surgical action triplet recognition in Roux-en-Y gastric bypass procedures across multiple centers
           </p>
         </div>
       </section>
@@ -30,14 +30,13 @@ const Challenge = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Surgical action triplet recognition is a fundamental task in surgical scene understanding. 
-                    A triplet consists of three components: the surgical instrument being used, the action (verb) 
-                    being performed, and the anatomical target of that action.
+                    Surgical workflow analysis has evolved in the types of intraoperative signals analyzed, with the goal of providing context-aware decision support to improve patient outcomes, identify surgical events, and support preoperative planning and postoperative analysis. Recent work has expanded analysis from coarse-grained levels (phases, steps) to fine-grained levels (action triplets). Action triplets describe a surgical scene using a triplet of &lt;instrument, verb, target&gt;.
                   </p>
                   <p className="text-muted-foreground">
-                    Understanding these triplets enables applications such as surgical workflow analysis, 
-                    skill assessment, and intelligent assistance systems. Gastric bypass surgery presents 
-                    unique challenges due to the complexity of the procedure and the variety of anatomical structures involved.
+                    However, with the advent of foundation models and the increasing need for model generalization across multiple centers, current surgical action triplet datasets face limitations in generalization assessment. CholecT50, while widely used, is monocentric with lower interaction density compared to multi-bypass procedures, which involve more instruments and actions, contributing to greater density and variability in instrument-anatomy interactions.
+                  </p>
+                  <p className="text-muted-foreground">
+                    To address these gaps, we introduce <strong className="text-foreground">MultiBypassT40</strong>, a large multi-centric dataset for complex Roux-en-Y gastric bypass surgery labeled with surgical action triplets. The dataset comprises 40 videos across 4 centers, with two centers providing training, validation, and test data, and two additional centers exclusively for testing. Our test set is approximately 5x larger than existing datasets, with a substantial hidden test set distributed across three centers for robust generalization evaluation.
                   </p>
                 </CardContent>
               </Card>
@@ -51,8 +50,7 @@ const Challenge = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Participants will develop algorithms to recognize surgical action triplets in video frames 
-                    from gastric bypass procedures. The task involves:
+                    The task is <strong className="text-foreground">online surgical action triplet recognition</strong>, where the model provides triplet predictions for a current surgical frame and optionally uses context strictly from previous frames. No access to future frames is allowed for evaluation. Participants will develop algorithms to recognize action triplets directly from the provided surgical videos.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
@@ -76,7 +74,7 @@ const Challenge = () => {
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-muted-foreground">
-                        <strong className="text-foreground">Triplet Association:</strong> Correctly associating these components into valid triplets
+                        <strong className="text-foreground">Triplet Association:</strong> Correctly associating these components into valid triplets (85 triplet classes)
                       </span>
                     </li>
                   </ul>
@@ -92,22 +90,25 @@ const Challenge = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Submissions will be evaluated using the following metrics:
+                    Submissions will be evaluated using the following metrics. The primary evaluation is performed at the full Instrument–Verb–Target (IVT) level. Metrics are computed per video and subsequently aggregated across videos.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="p-4 bg-secondary rounded-lg">
                       <h4 className="font-semibold text-foreground mb-2">Primary Metric</h4>
                       <p className="text-sm text-muted-foreground">
-                        Mean Average Precision (mAP) for triplet recognition
+                        Mean Average Precision (mAP) for triplet recognition, computed following ivtmetrics
                       </p>
                     </div>
                     <div className="p-4 bg-secondary rounded-lg">
-                      <h4 className="font-semibold text-foreground mb-2">Secondary Metrics</h4>
+                      <h4 className="font-semibold text-foreground mb-2">Complementary Metric</h4>
                       <p className="text-sm text-muted-foreground">
-                        Component-wise AP for instruments, verbs, and targets
+                        Macro-F1 score, with targeted analysis on rare triplets and phase-wise performance breakdowns
                       </p>
                     </div>
                   </div>
+                  <p className="text-sm text-muted-foreground">
+                    Component-wise performance (Instrument, Verb, Target) will be derived from IVT predictions for interpretability. Rankings are based on descending triplet mAP.
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -124,37 +125,46 @@ const Challenge = () => {
                     <p className="font-semibold text-foreground">MICCAI 2026</p>
                   </div>
                   <div>
+                    <p className="text-sm text-muted-foreground">Challenge Day</p>
+                    <p className="font-semibold text-foreground">October 4, 2026</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Venue</p>
+                    <p className="font-semibold text-foreground">ADNEC Centre, Abu Dhabi</p>
+                  </div>
+                  <div>
                     <p className="text-sm text-muted-foreground">Surgery Type</p>
-                    <p className="font-semibold text-foreground">Gastric Bypass</p>
+                    <p className="font-semibold text-foreground">Roux-en-Y Gastric Bypass</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Task Type</p>
-                    <p className="font-semibold text-foreground">Action Triplet Recognition</p>
+                    <p className="font-semibold text-foreground">Online Action Triplet Recognition</p>
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Data Format</p>
-                    <p className="font-semibold text-foreground">Video Frames + Annotations</p>
+                    <p className="text-sm text-muted-foreground">Acronym</p>
+                    <p className="font-semibold text-foreground">MultiBypassT40</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Duration</p>
+                    <p className="font-semibold text-foreground">2 Hours</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Data License</p>
+                    <p className="font-semibold text-foreground">CC BY-NC-SA</p>
                   </div>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Triplet Components</CardTitle>
+                  <CardTitle>Fields of Application</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="p-3 bg-primary/10 border border-primary/20 rounded-lg">
-                    <p className="text-sm font-medium text-primary">Instruments</p>
-                    <p className="text-xs text-muted-foreground">Grasper, Bipolar, Scissors, etc.</p>
-                  </div>
-                  <div className="p-3 bg-accent/10 border border-accent/20 rounded-lg">
-                    <p className="text-sm font-medium text-accent">Verbs</p>
-                    <p className="text-xs text-muted-foreground">Grasp, Retract, Cut, Coagulate, etc.</p>
-                  </div>
-                  <div className="p-3 bg-secondary border border-border rounded-lg">
-                    <p className="text-sm font-medium text-foreground">Targets</p>
-                    <p className="text-xs text-muted-foreground">Stomach, Omentum, Liver, etc.</p>
-                  </div>
+                <CardContent className="space-y-2">
+                  <p className="text-sm text-muted-foreground">Research</p>
+                  <p className="text-sm text-muted-foreground">Decision Support</p>
+                  <p className="text-sm text-muted-foreground">Surgical Workflow Analysis</p>
+                  <p className="text-sm text-muted-foreground">Surgical Action Recognition</p>
+                  <p className="text-sm text-muted-foreground">Multi-centric Action Analysis</p>
                 </CardContent>
               </Card>
             </div>

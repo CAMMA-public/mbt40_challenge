@@ -4,51 +4,57 @@ import { Calendar, CheckCircle, Clock, Flag } from "lucide-react";
 
 const timelineEvents = [
   {
-    date: "January 15, 2026",
-    title: "Challenge Announcement",
-    description: "Official announcement and website launch",
-    status: "completed",
-  },
-  {
-    date: "February 1, 2026",
-    title: "Training Data Release",
-    description: "Training and validation datasets become available",
-    status: "completed",
-  },
-  {
-    date: "February 15, 2026",
+    date: "April 1, 2026",
     title: "Registration Opens",
     description: "Team registration begins",
-    status: "current",
+    status: "upcoming",
+  },
+  {
+    date: "April 8, 2026",
+    title: "Training Data & Evaluation Script Release",
+    description: "Release of the training dataset and the evaluation metrics script",
+    status: "upcoming",
+  },
+  {
+    date: "May 4, 2026",
+    title: "Discord Channel & Tutorial Launch",
+    description: "Launch of Discord channel for interaction with participants and Colab tutorial",
+    status: "upcoming",
   },
   {
     date: "June 1, 2026",
-    title: "Test Data Release",
-    description: "Test data released (without annotations)",
+    title: "Docker Submission Template Release",
+    description: "Release of Docker submission template with input/output protocols",
     status: "upcoming",
   },
   {
-    date: "June 15, 2026",
-    title: "Submission Deadline",
-    description: "Final submission deadline for all participants",
+    date: "June 18, 2026",
+    title: "Self-Validation Phase",
+    description: "Self-validation phase for testing Docker containers begins",
     status: "upcoming",
   },
   {
-    date: "July 1, 2026",
-    title: "Results Announcement",
-    description: "Preliminary results announced",
+    date: "June 25, 2026",
+    title: "Registration Closes",
+    description: "Last day to register for the challenge",
     status: "upcoming",
   },
   {
-    date: "July 15, 2026",
-    title: "Technical Report Deadline",
-    description: "Deadline for submitting technical reports",
+    date: "July 18, 2026",
+    title: "Self-Validation Report Deadline",
+    description: "Deadline for submission of self-validation report",
     status: "upcoming",
   },
   {
-    date: "October 2026",
-    title: "MICCAI 2026 Workshop",
-    description: "Challenge workshop and award ceremony at MICCAI",
+    date: "September 3, 2026",
+    title: "Final Submission Deadline",
+    description: "Docker, presentation & report submission deadline (11:59pm CET)",
+    status: "upcoming",
+  },
+  {
+    date: "October 4, 2026",
+    title: "Challenge Day at MICCAI 2026",
+    description: "Challenge event at ADNEC Centre, Abu Dhabi",
     status: "upcoming",
   },
 ];
@@ -61,7 +67,7 @@ const Timeline = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-foreground mb-4">Timeline</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Important dates and deadlines for the challenge
+            Important dates and deadlines for the MultiBypassT40 challenge
           </p>
         </div>
       </section>
@@ -128,9 +134,9 @@ const Timeline = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Note</h4>
                   <p className="text-sm text-muted-foreground">
-                    All deadlines are at 23:59 UTC on the specified date. The organizers reserve the 
+                    All deadlines are at 23:59 CET on the specified date unless otherwise noted. The organizers reserve the 
                     right to make minor adjustments to the timeline if necessary. Any changes will be 
-                    announced via email to registered participants.
+                    announced via email to registered participants and on the Discord channel.
                   </p>
                 </div>
               </CardContent>
