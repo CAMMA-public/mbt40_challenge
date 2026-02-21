@@ -163,8 +163,12 @@ const Index = () => {
               from Roux-en-Y gastric bypass surgery videos. Models must process frames causally — no access to future frames.
               This challenge establishes a new research direction focused on generalization across multiple centers, organized in conjunction with EndoVis.
             </p>
-            <div className="flex justify-center mb-8">
-              <img src={tripletImg} alt="Surgical Action Triplet: Instrument, Verb, Target" className="rounded-xl border border-border max-w-full md:max-w-2xl" />
+            <div className="flex justify-center mb-12">
+              <img
+                src={tripletImg}
+                alt="Surgical Action Triplet: Instrument, Verb, Target"
+                className="rounded-2xl border border-border shadow-lg w-full max-w-6xl"
+              />
             </div>
             <p className="text-base text-muted-foreground text-center italic">
               More details will be added as the challenge progresses.
