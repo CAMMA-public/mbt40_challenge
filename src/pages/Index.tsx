@@ -34,8 +34,7 @@ function useCountdown(target: Date) {
 }
 
 const news = [
-{ date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026 EndoVis" },
-{ date: "Coming April 1, 2026", text: "Registration opens — stay tuned!" }];
+{ date: "February 2026", text: "Challenge proposal submitted at MICCAI 2026 EndoVis" }];
 
 
 const logos = [
