@@ -78,7 +78,6 @@ const Index = () => {
 
           <p className="text-lg max-w-2xl mx-auto mb-6 flex items-center justify-center gap-2 text-primary-foreground">October 4 - 8, 2026 — ADNEC Centre, Abu Dhabi
             <MapPin className="h-5 w-5 text-primary" />
-            October 4, 2026 — ADNEC Centre, Abu Dhabi
           </p>
 
           {/* Countdown Timer */}
