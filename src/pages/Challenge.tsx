@@ -8,7 +8,7 @@ const Challenge = () => {
       {/* Header */}
       <section className="py-16 bg-card border-b border-border">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Challenge Overview</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Challenge Overview</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
             Online surgical action triplet recognition in Roux-en-Y gastric bypass procedures across multiple centers
           </p>
@@ -146,11 +146,11 @@ const Challenge = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Duration</p>
-                    <p className="font-semibold text-foreground">2 Hours</p>
+                    <p className="font-semibold text-foreground">1 Hour</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Data License</p>
-                    <p className="font-semibold text-foreground">CC BY-NC-SA</p>
+                    <p className="font-semibold text-foreground">CC BY-NC-SA (after embargo)</p>
                   </div>
                 </CardContent>
               </Card>

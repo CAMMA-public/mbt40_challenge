@@ -46,10 +46,10 @@ const Footer = () => {
               Primary contact:
             </p>
             <a
-              href="mailto:ssharma@unistra.fr"
+              href="mailto:multibypass2026@gmail.com"
               className="text-sm text-primary hover:underline"
             >
-              ssharma@unistra.fr
+              multibypass2026@gmail.com
             </a>
           </div>
         </div>
