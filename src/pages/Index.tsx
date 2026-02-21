@@ -109,16 +109,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Logos Bar */}
-      <section className="py-8 bg-card border-y border-border">
-        <div className="container mx-auto px-4">
-          <div className="flex-wrap items-center justify-center gap-8 flex flex-row md:gap-[23px]">
-            {logos.map((l) =>
-            <img key={l.alt} src={l.src} alt={l.alt} className="h-12 md:h-16 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-            )}
-          </div>
-        </div>
-      </section>
+      {/* Logos Bar - moved to bottom */}
 
       {/* Key Features */}
       <section className="py-20 bg-card">
@@ -222,6 +213,17 @@ const Index = () => {
           <Button variant="hero" size="lg" asChild>
             <Link to="/submission">Register Your Team</Link>
           </Button>
+        </div>
+      </section>
+
+      {/* Institution Logos */}
+      <section className="py-6 bg-card border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            {logos.map((l) =>
+            <img key={l.alt} src={l.src} alt={l.alt} className="h-8 md:h-10 object-contain brightness-0 invert opacity-50 hover:opacity-80 transition-opacity" />
+            )}
+          </div>
         </div>
       </section>
     </Layout>);

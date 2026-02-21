@@ -121,13 +121,7 @@ const Organizers = () => {
             ))}
           </div>
 
-          {/* Institution Logos */}
-          <h2 className="text-3xl font-bold text-foreground mb-8">Institutions</h2>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mb-16 p-8 bg-secondary/50 rounded-xl border border-border">
-            {institutionLogos.map((l) => (
-              <img key={l.alt} src={l.src} alt={l.alt} className="h-14 md:h-20 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-            ))}
-          </div>
+          {/* Institution Logos moved to bottom */}
 
           <h2 className="text-3xl font-bold text-foreground mb-8">Partners & Sponsors</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
@@ -166,6 +160,17 @@ const Organizers = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Institution Logos */}
+      <section className="py-6 bg-card border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            {institutionLogos.map((l) => (
+              <img key={l.alt} src={l.src} alt={l.alt} className="h-8 md:h-10 object-contain brightness-0 invert opacity-50 hover:opacity-80 transition-opacity" />
+            ))}
+          </div>
         </div>
       </section>
     </Layout>
