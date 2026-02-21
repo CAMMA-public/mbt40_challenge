@@ -16,6 +16,13 @@ npm run dev -- --host --port 8020
 
 Then open http://localhost:8020.
 
+## Deploy to GitHub Pages
+
+- Vite base path is set to `/multibypass-challenge/` in `vite.config.ts` for project pages.
+- Workflow `.github/workflows/deploy.yml` builds and deploys to GitHub Pages on pushes to `main` (or manual dispatch).
+- In repository settings, enable Pages with source “GitHub Actions.”
+- After the first successful run, the site will be served at `https://<your-username>.github.io/multibypass-challenge/`.
+
 ## Scripts
 
 - `npm run dev` — start the dev server

@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // ✅ dev: '/', prod (GitHub Pages project): '/multibypass-challenge/'
+  base: mode === "production" ? "/multibypass-challenge/" : "/",
   server: {
     host: "::",
     port: 8020,
