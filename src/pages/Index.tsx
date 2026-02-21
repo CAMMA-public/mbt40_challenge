@@ -221,13 +221,13 @@ const Index = () => {
       {/* Institution Logos */}
       <section className="py-6 bg-card border-t border-border">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap items-center justify-center gap-5">
+          <div className="flex flex-nowrap items-center justify-center gap-6 overflow-x-auto">
             {logos.map((l) =>
             <img
               key={l.alt}
               src={l.src}
               alt={l.alt}
-              className="h-10 md:h-12 object-contain rounded-md bg-white/90 px-3 py-2 shadow-sm border border-border/60 transition hover:shadow-md"
+              className="h-12 md:h-14 object-contain rounded-md bg-white/90 px-3 py-2 shadow-sm border border-border/60 transition hover:shadow-md"
             />
             )}
           </div>
