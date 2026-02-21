@@ -63,4 +63,11 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground text-[17px] leading-relaxed;
   }
+
+  /* Widen containers on large screens to reduce excessive side gutters */
+  .container {
+    max-width: 1400px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }

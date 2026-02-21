@@ -126,7 +126,7 @@ const Challenge = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Challenge Day</p>
-                    <p className="font-semibold text-foreground">October 4, 2026</p>
+                    <p className="font-semibold text-foreground">October 4 - 8, 2026</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Venue</p>

@@ -16,7 +16,7 @@ const Footer = () => {
               MultiBypass Surgical Action Triplet Challenge at MICCAI 2026
             </p>
             <p className="text-sm text-muted-foreground">
-              October 4, 2026 — ADNEC Centre, Abu Dhabi
+              October 4 - 8, 2026 — ADNEC Centre, Abu Dhabi
             </p>
           </div>
 

@@ -101,8 +101,8 @@ const Index = () => {
                 Learn More <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="heroOutline" size="lg" asChild>
-              <Link to="/submission">Register Now</Link>
+            <Button variant="heroOutline" size="lg" disabled title="Registration opens April 1, 2026">
+              Register (opens Apr 1, 2026)
             </Button>
           </div>
         </div>
@@ -144,7 +144,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">MICCAI 2026</h3>
               <p className="text-base text-muted-foreground">
-                Present your work at the premier medical imaging conference, October 4, Abu Dhabi
+                Present your work at the premier medical imaging conference, October 4 - 8, 2026 — Abu Dhabi
               </p>
             </div>
           </div>
@@ -209,8 +209,8 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Registration opens April 1, 2026. Join teams from around the world in advancing surgical action understanding.
           </p>
-          <Button variant="hero" size="lg" asChild>
-            <Link to="/submission">Register Your Team</Link>
+          <Button variant="hero" size="lg" disabled title="Registration opens April 1, 2026">
+            Register Your Team (opens Apr 1, 2026)
           </Button>
         </div>
       </section>
@@ -220,7 +220,12 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center justify-center gap-5">
             {logos.map((l) =>
-            <img key={l.alt} src={l.src} alt={l.alt} className="h-8 md:h-10 object-contain brightness-0 invert opacity-50 hover:opacity-80 transition-opacity" />
+            <img
+              key={l.alt}
+              src={l.src}
+              alt={l.alt}
+              className="h-10 md:h-12 object-contain rounded-md bg-white/90 px-3 py-2 shadow-sm border border-border/60 transition hover:shadow-md"
+            />
             )}
           </div>
         </div>

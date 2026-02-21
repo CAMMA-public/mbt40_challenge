@@ -37,8 +37,8 @@ const Submission = () => {
                   <li>Download the training dataset and starter kit</li>
                   <li>Join the Discord channel for support (launching May 4)</li>
                 </ol>
-                <Button variant="hero" className="w-full mt-4">
-                  <ExternalLink className="mr-2 h-4 w-4" /> Register Your Team
+                <Button variant="hero" className="w-full mt-4" disabled title="Registration opens April 1, 2026">
+                  <ExternalLink className="mr-2 h-4 w-4" /> Register Your Team (opens Apr 1, 2026)
                 </Button>
               </CardContent>
             </Card>

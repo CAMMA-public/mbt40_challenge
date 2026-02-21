@@ -52,9 +52,9 @@ const timelineEvents = [
     status: "upcoming",
   },
   {
-    date: "October 4, 2026",
-    title: "Challenge Day at MICCAI 2026",
-    description: "Challenge event at ADNEC Centre, Abu Dhabi",
+    date: "October 4 - 8, 2026",
+    title: "Challenge Week at MICCAI 2026",
+    description: "Challenge presence at ADNEC Centre, Abu Dhabi",
     status: "upcoming",
   },
 ];
