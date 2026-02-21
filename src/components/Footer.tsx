@@ -9,7 +9,11 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="Challenge Logo" className="h-10 w-10 object-contain" />
+              <img
+                src={logo}
+                alt="Challenge Logo"
+                className="h-10 w-10 object-contain mix-blend-screen"
+              />
               <span className="font-semibold text-foreground">MultiBypassT40</span>
             </div>
             <p className="text-sm text-muted-foreground">

@@ -23,7 +23,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Challenge Logo" className="h-10 w-10 object-contain" />
+            <img
+              src={logo}
+              alt="Challenge Logo"
+              className="h-10 w-10 object-contain mix-blend-screen"
+            />
             <span className="hidden sm:block text-sm font-semibold text-foreground">
               MultiBypass 2026
             </span>
