@@ -12,7 +12,6 @@ import lorenzoImg from "@/assets/lorenzo.png";
 import lalithImg from "@/assets/lalith.jpg";
 import shiImg from "@/assets/shi.png";
 import juliaImg from "@/assets/julia.png";
-import joelImg from "@/assets/joel.png";
 import nicolasImg from "@/assets/nicolas.png";
 
 const organizers = [
@@ -50,7 +49,6 @@ const organizers = [
     name: "Joël Lavanchy",
     role: "Organizer (data collection, annotation protocol, annotation supervision)",
     institution: "University Digestive Health Care Center - Clarunis, University Hospital of Basel",
-    image: joelImg,
   },
   {
     name: "Nicolas Padoy",
@@ -104,7 +102,7 @@ const Organizers = () => {
                   <img
                     src={person.image}
                     alt={person.name}
-                    className="w-24 h-24 rounded-full mx-auto mb-4 bg-secondary"
+                    className="w-24 h-24 rounded-full mx-auto mb-4 bg-secondary object-cover"
                   />
                   <h3 className="font-semibold text-foreground text-lg">{person.name}</h3>
                   <p className="text-sm text-primary mt-1">{person.role}</p>
