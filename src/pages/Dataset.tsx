@@ -55,8 +55,12 @@ const Dataset = () => {
           </div>
 
           {/* Triplet Illustration */}
-          <div className="flex justify-center mb-12">
-            <img src={tripletImg} alt="Surgical Action Triplet: Instrument, Verb, Target" className="rounded-xl border border-border max-w-full md:max-w-2xl" />
+          <div className="flex justify-center mb-14">
+            <img
+              src={tripletImg}
+              alt="Surgical Action Triplet: Instrument, Verb, Target"
+              className="rounded-2xl border border-border shadow-lg w-full max-w-6xl"
+            />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
