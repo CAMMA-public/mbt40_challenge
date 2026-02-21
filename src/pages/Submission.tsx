@@ -52,7 +52,7 @@ const Submission = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-base text-muted-foreground">
-                  Participating teams must submit a <strong className="text-foreground">Docker container</strong> containing their code. The organizers will evaluate submissions on the test and future public test sets.
+                  Participating teams must submit a <strong className="text-foreground">Docker container</strong> containing their code. The organizers will evaluate submissions on the Future Public Test Set and the Hidden Test Set.
                 </p>
                 <div className="p-4 bg-secondary rounded-lg space-y-2">
                   <p className="text-base font-semibold text-foreground">What you'll receive:</p>

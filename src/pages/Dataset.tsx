@@ -82,7 +82,7 @@ const Dataset = () => {
                   <h4 className="font-semibold text-foreground text-lg">Key Features:</h4>
                   <ul className="list-disc list-inside text-base text-muted-foreground space-y-1">
                     <li>Multi-centric data across 4 institutions</li>
-                    <li>100% annotated (training, test, and future public test)</li>
+                    <li>100% annotated (training, future public test, and hidden test)</li>
                     <li>Expert clinician annotations with mediation</li>
                     <li>Frame-level triplet labels (85 classes)</li>
                     <li>Laparoscopic video stream (RGB frames at 1fps)</li>
@@ -115,20 +115,20 @@ const Dataset = () => {
                   </div>
                   <div className="p-4 bg-secondary rounded-lg">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-semibold text-foreground text-lg">Test Set</span>
+                      <span className="font-semibold text-foreground text-lg">Future Public Test Set</span>
                       <span className="text-primary font-medium text-lg">9 videos</span>
                     </div>
                     <p className="text-base text-muted-foreground">
-                      From centers C1 and C2. Used for official evaluation.
+                      From centers C1 and C2. Used for official evaluation and planned for public release at challenge conclusion.
                     </p>
                   </div>
                   <div className="p-4 bg-secondary rounded-lg">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-semibold text-foreground text-lg">Future Public Test Set</span>
+                      <span className="font-semibold text-foreground text-lg">Hidden Test Set</span>
                       <span className="text-primary font-medium text-lg">15 videos</span>
                     </div>
                     <p className="text-base text-muted-foreground">
-                      From centers C1, C3, and C4 (5 each). Unseen, unpublished data for robust generalization evaluation. Centers C3 and C4 are never observed during training.
+                      From centers C1, C3, and C4 (5 each). Unseen, unpublished data for sealed evaluation. Centers C3 and C4 are never observed during training.
                     </p>
                   </div>
                 </div>
