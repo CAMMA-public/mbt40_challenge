@@ -7,49 +7,56 @@ import logoIhu from "@/assets/logo-ihu.jpeg";
 import logoChu from "@/assets/logo-chu-strasbourg.png";
 import logoClarunis from "@/assets/logo-clarunis.svg";
 import logoUsz from "@/assets/logo-usz.png";
+import sauravImg from "@/assets/saurav.png";
+import lorenzoImg from "@/assets/lorenzo.png";
+import lalithImg from "@/assets/lalith.jpg";
+import shiImg from "@/assets/shi.png";
+import juliaImg from "@/assets/julia.png";
+import joelImg from "@/assets/joel.png";
+import nicolasImg from "@/assets/nicolas.png";
 
 const organizers = [
   {
     name: "Saurav Sharma",
     role: "Organizer",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=saurav",
+    image: sauravImg,
   },
   {
     name: "Lorenzo Arboit",
     role: "Organizer (annotation protocol, data harmonization, website)",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=lorenzo",
+    image: lorenzoImg,
   },
   {
     name: "Lalith Sharan",
     role: "Organizer",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=lalith",
+    image: lalithImg,
   },
   {
     name: "Shi Li",
     role: "Organizer",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=shili",
+    image: shiImg,
   },
   {
     name: "Julia Alekseenko",
     role: "Organizer",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=julia",
+    image: juliaImg,
   },
   {
     name: "Joël Lavanchy",
     role: "Organizer (data collection, annotation protocol, annotation supervision)",
     institution: "University Digestive Health Care Center - Clarunis, University Hospital of Basel",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=joel",
+    image: joelImg,
   },
   {
     name: "Nicolas Padoy",
     role: "Organizer",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=nicolas",
+    image: nicolasImg,
   },
 ];
 
