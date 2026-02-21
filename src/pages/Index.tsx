@@ -20,9 +20,9 @@ function useCountdown(target: Date) {
     if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     return {
       days: Math.floor(diff / 86400000),
-      hours: Math.floor((diff % 86400000) / 3600000),
-      minutes: Math.floor((diff % 3600000) / 60000),
-      seconds: Math.floor((diff % 60000) / 1000),
+      hours: Math.floor(diff % 86400000 / 3600000),
+      minutes: Math.floor(diff % 3600000 / 60000),
+      seconds: Math.floor(diff % 60000 / 1000)
     };
   };
   const [time, setTime] = useState(calc);
@@ -34,18 +34,18 @@ function useCountdown(target: Date) {
 }
 
 const news = [
-  { date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026 EndoVis" },
-  { date: "Coming April 1, 2026", text: "Registration opens — stay tuned!" },
-];
+{ date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026 EndoVis" },
+{ date: "Coming April 1, 2026", text: "Registration opens — stay tuned!" }];
+
 
 const logos = [
-  { src: logoCamma, alt: "CAMMA" },
-  { src: logoUnistra, alt: "University of Strasbourg" },
-  { src: logoIhu, alt: "IHU Strasbourg" },
-  { src: logoChu, alt: "CHU Strasbourg" },
-  { src: logoClarunis, alt: "Clarunis" },
-  { src: logoUsz, alt: "USZ Zürich" },
-];
+{ src: logoCamma, alt: "CAMMA" },
+{ src: logoUnistra, alt: "University of Strasbourg" },
+{ src: logoIhu, alt: "IHU Strasbourg" },
+{ src: logoChu, alt: "CHU Strasbourg" },
+{ src: logoClarunis, alt: "Clarunis" },
+{ src: logoUsz, alt: "USZ Zürich" }];
+
 
 const Index = () => {
   const countdown = useCountdown(CHALLENGE_DATE);
@@ -56,8 +56,8 @@ const Index = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${banner})` }}
-        >
+          style={{ backgroundImage: `url(${banner})` }}>
+
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
         </div>
 
@@ -72,11 +72,11 @@ const Index = () => {
             <span className="text-primary">Triplet Challenge 2026</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4">
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-4 text-primary-foreground bg-transparent">
             Advancing surgical action triplet recognition through multi-center Roux-en-Y gastric bypass procedure analysis
           </p>
 
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6 flex items-center justify-center gap-2">
+          <p className="text-lg max-w-2xl mx-auto mb-6 flex items-center justify-center gap-2 text-primary-foreground">
             <MapPin className="h-5 w-5 text-primary" />
             October 4, 2026 — ADNEC Centre, Abu Dhabi
           </p>
@@ -84,16 +84,16 @@ const Index = () => {
           {/* Countdown Timer */}
           <div className="flex justify-center gap-4 mb-10">
             {[
-              { label: "Days", value: countdown.days },
-              { label: "Hours", value: countdown.hours },
-              { label: "Min", value: countdown.minutes },
-              { label: "Sec", value: countdown.seconds },
-            ].map((unit) => (
-              <div key={unit.label} className="flex flex-col items-center bg-card/60 backdrop-blur-sm border border-border rounded-lg px-4 py-3 min-w-[70px]">
+            { label: "Days", value: countdown.days },
+            { label: "Hours", value: countdown.hours },
+            { label: "Min", value: countdown.minutes },
+            { label: "Sec", value: countdown.seconds }].
+            map((unit) =>
+            <div key={unit.label} className="flex flex-col items-center bg-card/60 backdrop-blur-sm border border-border rounded-lg px-4 py-3 min-w-[70px]">
                 <span className="text-3xl md:text-4xl font-bold text-primary tabular-nums">{String(unit.value).padStart(2, "0")}</span>
                 <span className="text-xs text-muted-foreground uppercase tracking-wider">{unit.label}</span>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -112,10 +112,10 @@ const Index = () => {
       {/* Logos Bar */}
       <section className="py-8 bg-card border-y border-border">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {logos.map((l) => (
-              <img key={l.alt} src={l.src} alt={l.alt} className="h-12 md:h-16 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-            ))}
+          <div className="flex-wrap items-center justify-center gap-8 flex flex-row md:gap-[23px]">
+            {logos.map((l) =>
+            <img key={l.alt} src={l.src} alt={l.alt} className="h-12 md:h-16 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+            )}
           </div>
         </div>
       </section>
@@ -199,12 +199,12 @@ const Index = () => {
               News & Updates
             </h2>
             <div className="space-y-4">
-              {news.map((item, i) => (
-                <div key={i} className="flex gap-4 p-5 bg-secondary rounded-lg border border-border">
+              {news.map((item, i) =>
+              <div key={i} className="flex gap-4 p-5 bg-secondary rounded-lg border border-border">
                   <div className="flex-shrink-0 text-sm font-semibold text-primary min-w-[160px]">{item.date}</div>
                   <p className="text-base text-foreground">{item.text}</p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -224,8 +224,8 @@ const Index = () => {
           </Button>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>);
+
 };
 
 export default Index;
