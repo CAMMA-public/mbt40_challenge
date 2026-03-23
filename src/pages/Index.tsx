@@ -10,6 +10,7 @@ import logoIhu from "@/assets/logo-ihu.jpeg";
 import logoChu from "@/assets/logo-chu-strasbourg.png";
 import logoClarunis from "@/assets/logo-clarunis.svg";
 import logoUsz from "@/assets/logo-usz.png";
+import logoBasel from "@/assets/logo-basel.svg";
 import { useEffect, useState } from "react";
 
 const CHALLENGE_DATE = new Date("2026-10-04T00:00:00");
@@ -45,7 +46,8 @@ const logos = [
 { src: logoIhu, alt: "IHU Strasbourg" },
 { src: logoChu, alt: "CHU Strasbourg" },
 { src: logoClarunis, alt: "Clarunis" },
-{ src: logoUsz, alt: "USZ Zürich" }];
+{ src: logoUsz, alt: "USZ Zürich" },
+{ src: logoBasel, alt: "University Hospital of Basel" }];
 
 
 const Index = () => {
