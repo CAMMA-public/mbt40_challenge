@@ -13,6 +13,8 @@ import logoUsz from "@/assets/logo-usz.png";
 import { useEffect, useState } from "react";
 
 const CHALLENGE_DATE = new Date("2026-10-04T00:00:00");
+const REGISTRATION_OPEN_DATE = new Date("2026-04-01T00:00:00");
+const REGISTRATION_FORM_URL = "https://forms.gle/xxZPwv7CbY2yt4sV9";
 
 function useCountdown(target: Date) {
   const calc = () => {
@@ -34,7 +36,7 @@ function useCountdown(target: Date) {
 }
 
 const news = [
-{ date: "February 2026", text: "Challenge proposal submitted at MICCAI 2026 EndoVis" }];
+{ date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026 EndoVis" }];
 
 
 const logos = [
@@ -48,6 +50,7 @@ const logos = [
 
 const Index = () => {
   const countdown = useCountdown(CHALLENGE_DATE);
+  const isRegistrationOpen = new Date() >= REGISTRATION_OPEN_DATE;
 
   return (
     <Layout>
@@ -100,9 +103,14 @@ const Index = () => {
                 Learn More <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
+            {isRegistrationOpen ?
+            <Button variant="heroOutline" size="lg" asChild>
+                <a href={REGISTRATION_FORM_URL} target="_blank" rel="noopener noreferrer">Register Now</a>
+              </Button> :
             <Button variant="heroOutline" size="lg" disabled title="Registration opens April 1, 2026">
-              Register (opens Apr 1, 2026)
-            </Button>
+                Register (opens Apr 1, 2026)
+              </Button>
+            }
           </div>
         </div>
       </section>
@@ -212,9 +220,14 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Registration opens April 1, 2026. Join teams from around the world in advancing surgical action understanding.
           </p>
+          {isRegistrationOpen ?
+          <Button variant="hero" size="lg" asChild>
+              <a href={REGISTRATION_FORM_URL} target="_blank" rel="noopener noreferrer">Register Your Team</a>
+            </Button> :
           <Button variant="hero" size="lg" disabled title="Registration opens April 1, 2026">
-            Register Your Team (opens Apr 1, 2026)
-          </Button>
+              Register Your Team (opens Apr 1, 2026)
+            </Button>
+          }
         </div>
       </section>
 

@@ -3,7 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Upload, FileText, AlertCircle, CheckCircle, ExternalLink, Package } from "lucide-react";
 
+const REGISTRATION_OPEN_DATE = new Date("2026-04-01T00:00:00");
+const REGISTRATION_FORM_URL = "https://forms.gle/xxZPwv7CbY2yt4sV9";
+
 const Submission = () => {
+  const isRegistrationOpen = new Date() >= REGISTRATION_OPEN_DATE;
+
   return (
     <Layout>
       {/* Header */}
@@ -37,9 +42,16 @@ const Submission = () => {
                   <li>Download the training dataset and starter kit</li>
                   <li>Join the Discord channel for support (launching May 4)</li>
                 </ol>
+                {isRegistrationOpen ?
+                <Button variant="hero" className="w-full mt-4" asChild>
+                    <a href={REGISTRATION_FORM_URL} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" /> Register Your Team
+                    </a>
+                  </Button> :
                 <Button variant="hero" className="w-full mt-4" disabled title="Registration opens April 1, 2026">
-                  <ExternalLink className="mr-2 h-4 w-4" /> Register Your Team (opens Apr 1, 2026)
-                </Button>
+                    <ExternalLink className="mr-2 h-4 w-4" /> Register Your Team (opens Apr 1, 2026)
+                  </Button>
+                }
               </CardContent>
             </Card>
 
