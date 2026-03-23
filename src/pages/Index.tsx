@@ -36,7 +36,7 @@ function useCountdown(target: Date) {
 }
 
 const news = [
-{ date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026 EndoVis" }];
+{ date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026" }];
 
 
 const logos = [
@@ -65,7 +65,7 @@ const Index = () => {
 
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
           <div className="inline-block mb-6 px-4 py-2 bg-primary/20 border border-primary/30 rounded-full">
-            <span className="text-primary text-base font-medium">MICCAI 2026 Challenge — EndoVis</span>
+            <span className="text-primary text-base font-medium">MICCAI 2026 Challenge — MultiSAT2026</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
