@@ -37,6 +37,7 @@ function useCountdown(target: Date) {
 }
 
 const news = [
+{ date: "April 1, 2026", text: "Registrations are now open. Teams can submit their registration using the official form." },
 { date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026" }];
 
 
