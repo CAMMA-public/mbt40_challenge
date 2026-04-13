@@ -25,7 +25,7 @@ const organizers = [
   },
   {
     name: "Lorenzo Arboit",
-    role: "Organizer (annotation protocol, data harmonization, website)",
+    role: "Organizer",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
     image: lorenzoImg,
   },
@@ -49,7 +49,7 @@ const organizers = [
   },
   {
     name: "Joël Lavanchy",
-    role: "Organizer (data collection, annotation protocol, annotation supervision)",
+    role: "Organizer",
     institution: "University Digestive Health Care Center - Clarunis, University Hospital of Basel",
     image: joelImg,
   },
@@ -63,8 +63,8 @@ const organizers = [
 
 const affiliations = [
   "University of Strasbourg, CNRS, INSERM, ICube, UMR7357, France",
-  "IHU Strasbourg",
-  "University Digestive Health Care Center - Clarunis, University Hospital of Basel, Basel, Switzerland",
+  "IHU Strasbourg, France",
+  "University Digestive Health Care Center - Clarunis, University Hospital of Basel, Switzerland",
 ];
 
 const institutionLogos = [
@@ -78,7 +78,7 @@ const institutionLogos = [
 ];
 
 const sponsors = [
-  { name: "IHU Strasbourg", type: "Award Sponsor" },
+  // { name: "IHU Strasbourg", type: "Award Sponsor" },
   { name: "EndoVis Challenge", type: "Thematic Event Partner" },
 ];
 

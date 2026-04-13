@@ -193,7 +193,7 @@ const Dataset = () => {
                   <li>The data <strong className="text-foreground">cannot be used, distributed, or published</strong> until the official release with the joint challenge publication.</li>
                   <li>There is an <strong className="text-foreground">embargo period</strong> until the challenge publication is published (anticipated end of 2026).</li>
                   <li>After the embargo, the dataset will be released under the <strong className="text-foreground">Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)</strong> license.</li>
-                  <li>Participants may publish their individual results separately only after the joint challenge paper has been published.</li>
+                  <li>Participants may <strong className="text-foreground">NOT</strong> publish their individual results before the joint challenge paper has been published.</li>
                 </ul>
               </CardContent>
             </Card>

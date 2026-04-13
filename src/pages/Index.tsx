@@ -134,7 +134,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">Prizes & Publication</h3>
               <p className="text-base text-muted-foreground">
-                Compete for prizes sponsored by IHU Strasbourg and co-author a joint publication in a top medical imaging journal
+                Compete for prizes and co-author a joint publication submitted to a top medical imaging journal
               </p>
             </div>
 

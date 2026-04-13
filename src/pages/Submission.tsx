@@ -173,10 +173,10 @@ const Submission = () => {
               </CardHeader>
               <CardContent className="space-y-3 text-base text-muted-foreground">
                 <p>
-                  The winner will be awarded a prize if at least 3 teams submit results. Depending on the number of teams, up to 2 runner-ups may also be awarded.
+                  The winner will be awarded a prize if at least 3 teams submit results. Depending on the number of teams, up to 2 runner-ups may also be awarded. The winning team will be selected based on the primary metric.
                 </p>
                 <p>
-                  Awards are sponsored by IHU Strasbourg. Participants from the organizers' institutes are not eligible for awards.
+                  Participants from the organizers' institutes are not eligible for awards.
                 </p>
               </CardContent>
             </Card>
