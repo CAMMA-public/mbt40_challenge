@@ -49,6 +49,12 @@ const organizers = [
     image: juliaImg,
   },
   {
+    name: "Andrea Naclerio",
+    role: "Organizer",
+    institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
+    image: andreaImg,
+  },
+  {
     name: "Joël Lavanchy",
     role: "Organizer (data collection, annotation protocol, annotation supervision)",
     institution: "University Digestive Health Care Center - Clarunis, University Hospital of Basel",
@@ -59,12 +65,6 @@ const organizers = [
     role: "Organizer",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
     image: nicolasImg,
-  },
-  {
-    name: "Andrea Naclerio",
-    role: "Organizer",
-    institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
-    image: andreaImg,
   },
 ];
 
