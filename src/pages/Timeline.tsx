@@ -52,10 +52,10 @@ const timelineEvents = [
     description: "Docker, presentation & report submission deadline (11:59pm CET)",
   },
   {
-    startDate: "2026-10-04",
-    date: "October 4 - 8, 2026",
+    startDate: "2026-09-27",
+    date: "September 27 - October 1, 2026",
     title: "Challenge Week at MICCAI 2026",
-    description: "Challenge presence at ADNEC Centre, Abu Dhabi",
+    description: "Challenge presence in Strasbourg, France",
   },
 ];
 

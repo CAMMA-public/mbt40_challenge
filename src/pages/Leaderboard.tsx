@@ -28,7 +28,7 @@ const Leaderboard = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  The leaderboard will be available after the challenge submissions are evaluated. Results will be first presented at the Endoscopic Vision Challenge meeting at MICCAI 2026 during <strong className="text-foreground">October 4 - 8, 2026</strong> at ADNEC Centre, Abu Dhabi.
+                  The leaderboard will be available after the challenge submissions are evaluated. Results will be first presented at the Endoscopic Vision Challenge meeting at MICCAI 2026 during <strong className="text-foreground">September 27 - October 1, 2026</strong> in Strasbourg, France.
                 </p>
                 <p className="text-muted-foreground">
                   Rankings will be based on descending <strong className="text-foreground">triplet mAP</strong>, with complementary macro-F1 scores and component-wise breakdowns (Instrument, Verb, Target).

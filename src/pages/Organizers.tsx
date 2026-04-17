@@ -15,6 +15,7 @@ import lalithImg from "@/assets/lalith.jpg";
 import shiImg from "@/assets/shi.png";
 import juliaImg from "@/assets/julia.png";
 import nicolasImg from "@/assets/nicolas.png";
+import andreaImg from "@/assets/andrea.png";
 
 const organizers = [
   {
@@ -25,7 +26,7 @@ const organizers = [
   },
   {
     name: "Lorenzo Arboit",
-    role: "Organizer",
+    role: "Organizer (annotation protocol, data harmonization, website)",
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
     image: lorenzoImg,
   },
@@ -49,7 +50,7 @@ const organizers = [
   },
   {
     name: "Joël Lavanchy",
-    role: "Organizer",
+    role: "Organizer (data collection, annotation protocol, annotation supervision)",
     institution: "University Digestive Health Care Center - Clarunis, University Hospital of Basel",
     image: joelImg,
   },
@@ -59,12 +60,18 @@ const organizers = [
     institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
     image: nicolasImg,
   },
+  {
+    name: "Andrea Naclerio",
+    role: "Organizer",
+    institution: "University of Strasbourg, CNRS, INSERM, ICube & IHU Strasbourg",
+    image: andreaImg,
+  },
 ];
 
 const affiliations = [
   "University of Strasbourg, CNRS, INSERM, ICube, UMR7357, France",
-  "IHU Strasbourg, France",
-  "University Digestive Health Care Center - Clarunis, University Hospital of Basel, Switzerland",
+  "IHU Strasbourg",
+  "University Digestive Health Care Center - Clarunis, University Hospital of Basel, Basel, Switzerland",
 ];
 
 const institutionLogos = [
@@ -78,7 +85,7 @@ const institutionLogos = [
 ];
 
 const sponsors = [
-  // { name: "IHU Strasbourg", type: "Award Sponsor" },
+  { name: "IHU Strasbourg", type: "Award Sponsor" },
   { name: "EndoVis Challenge", type: "Thematic Event Partner" },
 ];
 

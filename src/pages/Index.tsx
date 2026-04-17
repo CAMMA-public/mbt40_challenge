@@ -13,7 +13,7 @@ import logoUsz from "@/assets/logo-usz.png";
 import logoBasel from "@/assets/logo-basel.svg";
 import { useEffect, useState } from "react";
 
-const CHALLENGE_DATE = new Date("2026-10-04T00:00:00");
+const CHALLENGE_DATE = new Date("2026-09-27T00:00:00");
 const REGISTRATION_OPEN_DATE = new Date("2026-04-01T00:00:00");
 const REGISTRATION_FORM_URL = "https://forms.gle/xxZPwv7CbY2yt4sV9";
 
@@ -68,7 +68,7 @@ const Index = () => {
 
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
           <div className="inline-block mb-6 px-4 py-2 bg-primary/20 border border-primary/30 rounded-full">
-            <span className="text-primary text-base font-medium">MICCAI 2026 Challenge — MultiSAT2026</span>
+            <span className="text-primary text-base font-medium">MICCAI 2026 Challenge — MultiBypassTriplets2026</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
@@ -81,7 +81,7 @@ const Index = () => {
             Advancing surgical action triplet recognition through multi-center Roux-en-Y gastric bypass procedure analysis
           </p>
 
-          <p className="text-lg max-w-2xl mx-auto mb-6 flex items-center justify-center gap-2 text-primary-foreground">October 4 - 8, 2026 — ADNEC Centre, Abu Dhabi
+          <p className="text-lg max-w-2xl mx-auto mb-6 flex items-center justify-center gap-2 text-primary-foreground">September 27 - October 1, 2026 — Strasbourg, France
             <MapPin className="h-5 w-5 text-primary" />
           </p>
 
@@ -134,7 +134,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">Prizes & Publication</h3>
               <p className="text-base text-muted-foreground">
-                Compete for prizes and co-author a joint publication submitted to a top medical imaging journal
+                Compete for prizes sponsored by IHU Strasbourg and co-author a joint publication in a top medical imaging journal
               </p>
             </div>
 
@@ -154,7 +154,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">MICCAI 2026</h3>
               <p className="text-base text-muted-foreground">
-                Present your work at the premier medical imaging conference, October 4 - 8, 2026 — Abu Dhabi
+                Present your work at the premier medical imaging conference, September 27 - October 1, 2026 — Strasbourg
               </p>
             </div>
           </div>
