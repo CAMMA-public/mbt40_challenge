@@ -8,6 +8,7 @@ import logoChu from "@/assets/logo-chu-strasbourg.png";
 import logoClarunis from "@/assets/logo-clarunis.svg";
 import logoUsz from "@/assets/logo-usz.png";
 import logoBasel from "@/assets/logo-basel.svg";
+import healthtechLogo from "@/assets/healthtech_logo.png";
 import joelImg from "@/assets/joel.png";
 import sauravImg from "@/assets/saurav.png";
 import lorenzoImg from "@/assets/lorenzo.png";
@@ -82,6 +83,7 @@ const institutionLogos = [
   { src: logoClarunis, alt: "Clarunis" },
   { src: logoUsz, alt: "USZ Zürich" },
   { src: logoBasel, alt: "University Hospital of Basel" },
+  { src: healthtechLogo, alt: "HealthTech" },
 ];
 
 const sponsors = [

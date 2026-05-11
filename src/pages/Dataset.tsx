@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Database, FileVideo, Download, Lock, Building2, AlertTriangle } from "lucide-react";
 import tripletImg from "@/assets/triplet-illustration.png";
 
+const DATA_ACCESS_URL = "https://seafile.unistra.fr/f/58294001ee8844c7aef8/";
+const CODEBASE_URL = "https://github.com/CAMMA-public/multibypasstriplets2026_starter_kit";
+
 const centers = [
   { id: "C1", role: "Training + Test + Future Public Test" },
   { id: "C2", role: "Training + Test" },
@@ -214,8 +217,15 @@ const Dataset = () => {
               Training data will be shared via S3, Seafile, or Dropbox. A starter kit with dataset setup instructions, baseline training code, and the official evaluation script will be provided.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero">
-                <Download className="mr-2 h-4 w-4" /> Request Data Access
+              <Button variant="hero" asChild>
+                <a href={DATA_ACCESS_URL} target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" /> Request Data Access
+                </a>
+              </Button>
+              <Button variant="heroOutline" asChild>
+                <a href={CODEBASE_URL} target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" /> Codebase &amp; Documentation
+                </a>
               </Button>
             </div>
           </div>
