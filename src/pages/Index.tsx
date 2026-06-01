@@ -144,7 +144,7 @@ const Index = () => {
               <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">MultiBypassT40 Dataset</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">MultiBypass-4C-T40 Dataset</h3>
               <p className="text-base text-muted-foreground">
                 40 videos across 4 centers with 85 action triplet classes — the largest multi-centric surgical triplet dataset
               </p>

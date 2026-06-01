@@ -77,7 +77,7 @@ const Timeline = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-foreground mb-4">Timeline</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Important dates and deadlines for the MultiBypassT40 challenge
+            Important dates and deadlines for the MultiBypass-4C-T40 challenge
           </p>
         </div>
       </section>

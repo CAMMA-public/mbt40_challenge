@@ -20,7 +20,7 @@ const Dataset = () => {
       {/* Header */}
       <section className="py-16 bg-card border-b border-border">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold text-foreground mb-4">Dataset: MultiBypassT40</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Dataset: MultiBypass-4C-T40</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
             A large multi-centric dataset for complex Roux-en-Y gastric bypass surgery labeled with surgical action triplets
           </p>
@@ -76,7 +76,7 @@ const Dataset = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-base text-muted-foreground">
-                  MultiBypassT40 comprises 40 laparoscopic videos of Roux-en-Y gastric bypass surgery across 4 centers. Each video is annotated with surgical action triplets at the frame level, with 85 triplet classes. Each frame has a 1D binary vector indicating which actions are being performed.
+                  MultiBypass-4C-T40 comprises 40 laparoscopic videos of Roux-en-Y gastric bypass surgery across 4 centers. Each video is annotated with surgical action triplets at the frame level, with 85 triplet classes. Each frame has a 1D binary vector indicating which actions are being performed.
                 </p>
                 <p className="text-base text-muted-foreground">
                   Additionally, each case is provided with supplementary annotations for instruments, verbs, and targets individually. All annotations follow the same binary vector format.

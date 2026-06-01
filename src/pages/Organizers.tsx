@@ -99,7 +99,7 @@ const Organizers = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-bold text-foreground mb-4">Organizers</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Meet the team behind the MultiBypassT40 Challenge
+            Meet the team behind the MultiBypass-4C-T40 Challenge
           </p>
         </div>
       </section>
