@@ -34,8 +34,8 @@ const timelineEvents = [
     description: "Self-validation phase for testing Docker containers begins",
   },
   {
-    startDate: "2026-06-25",
-    date: "June 25, 2026",
+    startDate: "2026-07-02",
+    date: "July 2, 2026",
     title: "Registration Closes",
     description: "Last day to register for the challenge",
   },

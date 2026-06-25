@@ -34,7 +34,7 @@ const Submission = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-base text-muted-foreground">
-                  Registration opens <strong className="text-foreground">April 1, 2026</strong> and closes <strong className="text-foreground">June 25, 2026</strong>.
+                  Registration opens <strong className="text-foreground">April 1, 2026</strong> and closes <strong className="text-foreground">July 2, 2026</strong>.
                 </p>
                 <ol className="space-y-3 list-decimal list-inside text-base text-muted-foreground">
                   <li>Register your team on the challenge platform</li>
