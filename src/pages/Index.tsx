@@ -38,6 +38,7 @@ function useCountdown(target: Date) {
 }
 
 const news = [
+{ date: "July 24, 2026", text: "Submission compute limits are now available: 1 × NVIDIA A100 (80 GB), 16 logical CPUs, 32 GB RAM, an 8-hour runtime limit, and a 10 GB maximum container image size." },
 { date: "April 1, 2026", text: "Registrations are now open. Teams can submit their registration using the official form." },
 { date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026" }];
 

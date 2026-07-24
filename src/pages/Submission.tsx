@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Upload, FileText, AlertCircle, CheckCircle, ExternalLink, Package } from "lucide-react";
+import { Upload, FileText, AlertCircle, CheckCircle, ExternalLink, Package, Server } from "lucide-react";
 
 const REGISTRATION_OPEN_DATE = new Date("2026-04-01T00:00:00");
 const REGISTRATION_FORM_URL = "https://forms.gle/xxZPwv7CbY2yt4sV9";
@@ -81,6 +81,39 @@ const Submission = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Evaluation Environment */}
+          <Card className="mb-12">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-2xl">
+                <Server className="h-5 w-5 text-primary" />
+                Evaluation Environment & Limits
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-base text-muted-foreground mb-6">
+                Each submission is evaluated with the following dedicated resources and limits.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-secondary rounded-lg">
+                  <h4 className="font-semibold text-foreground text-lg">GPU</h4>
+                  <p className="text-base text-muted-foreground">1 × NVIDIA A100 with 80 GB GPU memory</p>
+                </div>
+                <div className="p-4 bg-secondary rounded-lg">
+                  <h4 className="font-semibold text-foreground text-lg">CPU & RAM</h4>
+                  <p className="text-base text-muted-foreground">16 logical CPUs and 32 GB system RAM</p>
+                </div>
+                <div className="p-4 bg-secondary rounded-lg">
+                  <h4 className="font-semibold text-foreground text-lg">Maximum Runtime</h4>
+                  <p className="text-base text-muted-foreground">8 hours per submission</p>
+                </div>
+                <div className="p-4 bg-secondary rounded-lg">
+                  <h4 className="font-semibold text-foreground text-lg">Container Image Size</h4>
+                  <p className="text-base text-muted-foreground">Maximum 10 GB</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
           {/* Submission Phases */}
           <Card className="mb-12">
