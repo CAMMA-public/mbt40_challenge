@@ -36,7 +36,7 @@ const Challenge = () => {
                     However, with the advent of foundation models and the increasing need for model generalization across multiple centers, current surgical action triplet datasets face limitations in generalization assessment. CholecT50, while widely used, is monocentric with lower interaction density compared to multi-bypass procedures, which involve more instruments and actions, contributing to greater density and variability in instrument-anatomy interactions.
                   </p>
                   <p className="text-muted-foreground">
-                    To address these gaps, we introduce <strong className="text-foreground">MultiBypassT40</strong>, a large multi-centric dataset for complex Roux-en-Y gastric bypass surgery labeled with surgical action triplets. The dataset comprises 40 videos across 4 centers, with two centers providing training, validation, and future public test data, and two additional centers exclusively for testing. Our Future Public Test Set is approximately 5x larger than existing datasets, with a substantial Hidden Test Set distributed across three centers for robust generalization evaluation.
+                    To address these gaps, we introduce <strong className="text-foreground">MultiBypass-4C-T40</strong>, a large multi-centric dataset for complex Roux-en-Y gastric bypass surgery labeled with surgical action triplets. The dataset comprises 40 videos across 4 centers, with two centers providing training, validation, and future public test data, and two additional centers exclusively for testing. Our Future Public Test Set is approximately 5x larger than existing datasets, with a substantial Hidden Test Set distributed across three centers for robust generalization evaluation.
                   </p>
                 </CardContent>
               </Card>
@@ -142,7 +142,7 @@ const Challenge = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Acronym</p>
-                    <p className="font-semibold text-foreground">MultiBypassT40</p>
+                    <p className="font-semibold text-foreground">MultiBypass-4C-T40</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Duration</p>
