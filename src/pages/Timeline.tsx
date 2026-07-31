@@ -40,8 +40,8 @@ const timelineEvents = [
     description: "Last day to register for the challenge",
   },
   {
-    startDate: "2026-07-18",
-    date: "July 18, 2026",
+    startDate: "2026-08-1",
+    date: "August 1, 2026",
     title: "Self-Validation Report Deadline",
     description: "Deadline for submission of self-validation report",
   },
