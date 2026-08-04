@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Calendar, Trophy, Users, ArrowRight, MapPin, Newspaper } from "lucide-react";
+import { Calendar, Trophy, Users, ArrowRight, MapPin, Newspaper, ExternalLink } from "lucide-react";
 import Layout from "@/components/Layout";
 import banner from "@/assets/banner.png";
 import tripletImg from "@/assets/triplet-illustration.png";
@@ -38,6 +38,7 @@ function useCountdown(target: Date) {
 }
 
 const news = [
+{ date: "August 3, 2026", text: "The MultiBypass-4C-T40 dataset paper is now available on arXiv.", href: "https://arxiv.org/abs/2608.02188" },
 { date: "July 24, 2026", text: "Submission compute limits are now available: 1 × NVIDIA A100 (80 GB), 16 logical CPUs, 32 GB RAM, an 8-hour runtime limit, and a 10 GB maximum container image size." },
 { date: "April 1, 2026", text: "Registrations are now open. Teams can submit their registration using the official form." },
 { date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026" }];
@@ -209,7 +210,21 @@ const Index = () => {
               {news.map((item, i) =>
               <div key={i} className="flex gap-4 p-5 bg-secondary rounded-lg border border-border">
                   <div className="flex-shrink-0 text-sm font-semibold text-primary min-w-[160px]">{item.date}</div>
-                  <p className="text-base text-foreground">{item.text}</p>
+                  <p className="text-base text-foreground">
+                    {item.text}
+                    {item.href &&
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2 inline-flex items-center gap-1 text-primary font-medium hover:underline"
+                    >
+                        <img src="https://arxiv.org/favicon.ico" alt="arXiv" className="h-4 w-4" />
+                        arXiv
+                        <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                      </a>
+                    }
+                  </p>
                 </div>
               )}
             </div>
