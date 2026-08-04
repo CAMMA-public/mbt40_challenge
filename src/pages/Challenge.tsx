@@ -146,7 +146,7 @@ const Challenge = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Duration</p>
-                    <p className="font-semibold text-foreground">1 Hour</p>
+                    <p className="font-semibold text-foreground">2 Hour</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Data License</p>

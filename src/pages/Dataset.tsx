@@ -1,11 +1,12 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Database, FileVideo, Download, Lock, Building2, AlertTriangle } from "lucide-react";
+import { Database, FileVideo, Download, Lock, Building2, AlertTriangle, ExternalLink } from "lucide-react";
 import tripletImg from "@/assets/triplet-illustration.png";
 
 const DATA_ACCESS_URL = "https://seafile.unistra.fr/f/58294001ee8844c7aef8/";
 const CODEBASE_URL = "https://github.com/CAMMA-public/multibypasstriplets2026_starter_kit";
+const ARXIV_PAPER_URL = "https://arxiv.org/abs/2608.02188";
 
 const centers = [
   { id: "C1", role: "Training + Test + Future Public Test" },
@@ -24,6 +25,16 @@ const Dataset = () => {
           <p className="text-xl text-muted-foreground max-w-3xl">
             A large multi-centric dataset for complex Roux-en-Y gastric bypass surgery labeled with surgical action triplets
           </p>
+          <a
+            href={ARXIV_PAPER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 text-primary font-medium hover:underline"
+          >
+            <img src="https://arxiv.org/favicon.ico" alt="arXiv" className="h-5 w-5" />
+            Read the MultiBypass-4C-T40 paper on arXiv
+            <ExternalLink className="h-4 w-4" aria-hidden="true" />
+          </a>
         </div>
       </section>
 
