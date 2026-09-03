@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Microscope, Brain, CheckCircle, Trophy } from "lucide-react";
+import healthtechLogo from "@/assets/healthtech_logo.png";
 
 const Challenge = () => {
   return (
@@ -120,6 +121,12 @@ const Challenge = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
+                  <div className="mb-5 flex items-center gap-3 rounded-lg bg-secondary p-3">
+                    <img src={healthtechLogo} alt="ITI – HealthTech" className="h-10 w-10 rounded bg-white object-contain p-1" />
+                    <p className="text-sm text-muted-foreground">
+                      Awards sponsored by <strong className="text-foreground">ITI – HealthTech</strong>
+                    </p>
+                  </div>
                   <ol className="space-y-3 text-muted-foreground">
                     <li className="flex items-center justify-between gap-4 border-b border-border pb-3">
                       <span><strong className="text-foreground">1st place</strong></span>
