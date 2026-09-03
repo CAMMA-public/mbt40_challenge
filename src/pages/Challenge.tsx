@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Microscope, Brain, CheckCircle } from "lucide-react";
+import { Target, Microscope, Brain, CheckCircle, Trophy } from "lucide-react";
 
 const Challenge = () => {
   return (
@@ -109,6 +109,31 @@ const Challenge = () => {
                   <p className="text-sm text-muted-foreground">
                     Component-wise performance (Instrument, Verb, Target) will be derived from IVT predictions for interpretability. Rankings are based on descending triplet mAP.
                   </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Trophy className="h-5 w-5 text-primary" />
+                    Awards & Prize Money
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ol className="space-y-3 text-muted-foreground">
+                    <li className="flex items-center justify-between gap-4 border-b border-border pb-3">
+                      <span><strong className="text-foreground">1st place</strong></span>
+                      <span className="font-semibold text-foreground">€1,000</span>
+                    </li>
+                    <li className="flex items-center justify-between gap-4 border-b border-border pb-3">
+                      <span><strong className="text-foreground">2nd place</strong></span>
+                      <span className="font-semibold text-foreground">€600</span>
+                    </li>
+                    <li className="flex items-center justify-between gap-4">
+                      <span><strong className="text-foreground">3rd place</strong></span>
+                      <span className="font-semibold text-foreground">€300</span>
+                    </li>
+                  </ol>
                 </CardContent>
               </Card>
             </div>

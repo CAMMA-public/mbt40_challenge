@@ -87,7 +87,7 @@ const institutionLogos = [
 ];
 
 const sponsors = [
-  { name: "IHU Strasbourg", type: "Award Sponsor" },
+  { name: "ITI – HealthTech", type: "Awards Sponsor", logo: healthtechLogo },
   { name: "EndoVis Challenge", type: "Thematic Event Partner" },
 ];
 
@@ -147,7 +147,11 @@ const Organizers = () => {
               <Card key={sponsor.name}>
                 <CardContent className="pt-6 flex items-center gap-4">
                   <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-                    <Building2 className="h-6 w-6 text-primary" />
+                    {sponsor.logo ? (
+                      <img src={sponsor.logo} alt={sponsor.name} className="h-10 w-10 object-contain" />
+                    ) : (
+                      <Building2 className="h-6 w-6 text-primary" />
+                    )}
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground text-lg">{sponsor.name}</h3>

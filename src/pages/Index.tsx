@@ -138,7 +138,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">Prizes & Publication</h3>
               <p className="text-base text-muted-foreground">
-                Compete for prizes sponsored by IHU Strasbourg and co-author a joint publication in a top medical imaging journal
+                Win €1,000, €600, or €300 for first, second, or third place, thanks to our sponsor ITI – HealthTech. Top teams will also co-author a joint publication in a leading medical imaging journal.
               </p>
             </div>
 
