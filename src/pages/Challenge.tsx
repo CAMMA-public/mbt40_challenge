@@ -2,7 +2,6 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Microscope, Brain, CheckCircle, Trophy } from "lucide-react";
 import healthtechLogo from "@/assets/healthtech_logo.png";
-import iaGrandEstEnactLogo from "@/assets/logo-ia-grand-est-enact.svg";
 
 const Challenge = () => {
   return (
@@ -189,13 +188,6 @@ const Challenge = () => {
                     <p className="text-sm text-muted-foreground">Data License</p>
                     <p className="font-semibold text-foreground">CC BY-NC-SA (after embargo)</p>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <p className="mb-3 text-sm text-muted-foreground">In partnership with</p>
-                  <img src={iaGrandEstEnactLogo} alt="IA Grand Est ENACT" className="h-16 max-w-full object-contain object-left" />
                 </CardContent>
               </Card>
 

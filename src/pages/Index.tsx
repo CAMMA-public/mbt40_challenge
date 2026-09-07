@@ -12,7 +12,7 @@ import logoClarunis from "@/assets/logo-clarunis.svg";
 import logoUsz from "@/assets/logo-usz.png";
 import logoBasel from "@/assets/logo-basel.svg";
 import healthtechLogo from "@/assets/healthtech_logo.png";
-import iaGrandEstEnactLogo from "@/assets/logo-ia-grand-est-enact.svg";
+import iaGrandEstEnactLogo from "@/assets/logo-ia-grand-est-enact.png";
 import { useEffect, useState } from "react";
 
 const CHALLENGE_DATE = new Date("2026-09-27T00:00:00");
