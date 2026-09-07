@@ -87,7 +87,7 @@ const Index = () => {
             Advancing surgical action triplet recognition through multi-center Roux-en-Y gastric bypass procedure analysis
           </p>
 
-          <p className="text-lg max-w-2xl mx-auto mb-6 flex items-center justify-center gap-2 text-primary-foreground">September 27 - October 1, 2026 — Strasbourg, France
+          <p className="text-lg max-w-3xl mx-auto mb-6 flex items-center justify-center gap-2 text-primary-foreground">MultiSAT · September 27, 2026 · 16:00–18:00 · Schuman (U), Strasbourg, France
             <MapPin className="h-5 w-5 text-primary" />
           </p>
 
