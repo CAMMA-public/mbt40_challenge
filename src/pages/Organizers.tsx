@@ -80,12 +80,12 @@ const institutionLogos = [
   { src: logoCamma, alt: "CAMMA" },
   { src: logoUnistra, alt: "University of Strasbourg" },
   { src: logoIhu, alt: "IHU Strasbourg" },
+  { src: iaGrandEstEnactLogo, alt: "IA Grand Est ENACT" },
   { src: logoChu, alt: "CHU Strasbourg" },
   { src: logoClarunis, alt: "Clarunis" },
   { src: logoUsz, alt: "USZ Zürich" },
   { src: logoBasel, alt: "University Hospital of Basel" },
   { src: healthtechLogo, alt: "HealthTech" },
-  { src: iaGrandEstEnactLogo, alt: "IA Grand Est ENACT" },
 ];
 
 const sponsors = [

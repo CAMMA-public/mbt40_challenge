@@ -49,12 +49,12 @@ const logos = [
 { src: logoCamma, alt: "CAMMA" },
 { src: logoUnistra, alt: "University of Strasbourg" },
 { src: logoIhu, alt: "IHU Strasbourg" },
+{ src: iaGrandEstEnactLogo, alt: "IA Grand Est ENACT" },
 { src: logoChu, alt: "CHU Strasbourg" },
 { src: logoClarunis, alt: "Clarunis" },
 { src: logoUsz, alt: "USZ Zürich" },
 { src: logoBasel, alt: "University Hospital of Basel" },
-{ src: healthtechLogo, alt: "HealthTech" },
-{ src: iaGrandEstEnactLogo, alt: "IA Grand Est ENACT" }];
+{ src: healthtechLogo, alt: "HealthTech" }];
 
 
 const Index = () => {
@@ -161,6 +161,9 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-foreground mb-2">MICCAI 2026</h3>
               <p className="text-base text-muted-foreground">
                 Present your work at the premier medical imaging conference, September 27 - October 1, 2026 — Strasbourg
+              </p>
+              <p className="mt-3 text-sm text-muted-foreground">
+                <strong className="text-foreground">MultiSAT:</strong> September 27, 2026, 16:00–18:00 — Schuman (U)
               </p>
             </div>
           </div>
