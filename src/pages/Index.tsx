@@ -160,10 +160,10 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-2">MICCAI 2026</h3>
               <p className="text-base text-muted-foreground">
-                Present your work at the premier medical imaging conference, September 27 - October 1, 2026 — Strasbourg
+                Join us at MICCAI 2026 in Strasbourg, September 27–October 1.
               </p>
               <p className="mt-3 text-sm text-muted-foreground">
-                <strong className="text-foreground">MultiSAT:</strong> September 27, 2026, 16:00–18:00 — Schuman (U)
+                <strong className="text-foreground">MultiSAT session</strong> · Sunday, September 27 · 16:00–18:00 · Schuman (U)
               </p>
             </div>
           </div>
