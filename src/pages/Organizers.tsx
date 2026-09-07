@@ -9,6 +9,7 @@ import logoClarunis from "@/assets/logo-clarunis.svg";
 import logoUsz from "@/assets/logo-usz.png";
 import logoBasel from "@/assets/logo-basel.svg";
 import healthtechLogo from "@/assets/healthtech_logo.png";
+import iaGrandEstEnactLogo from "@/assets/logo-ia-grand-est-enact.svg";
 import joelImg from "@/assets/joel.png";
 import sauravImg from "@/assets/saurav.png";
 import lorenzoImg from "@/assets/lorenzo.png";
@@ -84,10 +85,12 @@ const institutionLogos = [
   { src: logoUsz, alt: "USZ Zürich" },
   { src: logoBasel, alt: "University Hospital of Basel" },
   { src: healthtechLogo, alt: "HealthTech" },
+  { src: iaGrandEstEnactLogo, alt: "IA Grand Est ENACT" },
 ];
 
 const sponsors = [
   { name: "ITI – HealthTech", type: "Awards Sponsor", logo: healthtechLogo },
+  { name: "IA Grand Est ENACT", type: "Partner", logo: iaGrandEstEnactLogo },
   { name: "EndoVis Challenge", type: "Thematic Event Partner" },
 ];
 

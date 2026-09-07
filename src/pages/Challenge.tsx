@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Microscope, Brain, CheckCircle, Trophy } from "lucide-react";
 import healthtechLogo from "@/assets/healthtech_logo.png";
+import iaGrandEstEnactLogo from "@/assets/logo-ia-grand-est-enact.svg";
 
 const Challenge = () => {
   return (
@@ -153,16 +154,20 @@ const Challenge = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <p className="text-sm text-muted-foreground">Conference</p>
-                    <p className="font-semibold text-foreground">MICCAI 2026</p>
+                    <p className="text-sm text-muted-foreground">Event</p>
+                    <p className="font-semibold text-foreground">MultiSAT</p>
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Challenge Day</p>
-                    <p className="font-semibold text-foreground">September 27 - October 1, 2026</p>
+                    <p className="text-sm text-muted-foreground">Date</p>
+                    <p className="font-semibold text-foreground">September 27, 2026</p>
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Venue</p>
-                    <p className="font-semibold text-foreground">Strasbourg, France</p>
+                    <p className="text-sm text-muted-foreground">Time</p>
+                    <p className="font-semibold text-foreground">16:00 – 18:00</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Room</p>
+                    <p className="font-semibold text-foreground">Schuman (U)</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Surgery Type</p>
@@ -178,12 +183,19 @@ const Challenge = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Duration</p>
-                    <p className="font-semibold text-foreground">2 Hour</p>
+                    <p className="font-semibold text-foreground">2 hours</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Data License</p>
                     <p className="font-semibold text-foreground">CC BY-NC-SA (after embargo)</p>
                   </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <p className="mb-3 text-sm text-muted-foreground">In partnership with</p>
+                  <img src={iaGrandEstEnactLogo} alt="IA Grand Est ENACT" className="h-16 max-w-full object-contain object-left" />
                 </CardContent>
               </Card>
 
