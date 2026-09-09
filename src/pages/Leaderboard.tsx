@@ -10,7 +10,7 @@ const Leaderboard = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-foreground mb-4">Leaderboard</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Challenge rankings based on triplet mAP
+            Challenge rankings based on triplet mAP + F1-score
           </p>
         </div>
       </section>
@@ -31,7 +31,7 @@ const Leaderboard = () => {
                   The leaderboard will be available after the challenge submissions are evaluated. Results will be first presented at the Endoscopic Vision Challenge meeting at MICCAI 2026 during <strong className="text-foreground">September 27 - October 1, 2026</strong> in Strasbourg, France.
                 </p>
                 <p className="text-muted-foreground">
-                  Rankings will be based on descending <strong className="text-foreground">triplet mAP</strong>, with complementary macro-F1 scores and component-wise breakdowns (Instrument, Verb, Target).
+                  The <strong className="text-foreground">triplet mAP and F1-score</strong> will be used to quantify model performance. Submissions will be ranked in descending order based on <strong className="text-foreground">triplet mAP + F1-score</strong>.
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Participants from the organizers' institutes will not appear on the official leaderboard. A single baseline result from the organizing team will be provided for reference only, clearly marked as non-competitive.

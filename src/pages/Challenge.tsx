@@ -91,24 +91,24 @@ const Challenge = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Submissions will be evaluated using the following metrics. The primary evaluation is performed at the full Instrument–Verb–Target (IVT) level. Metrics are computed per video and subsequently aggregated across videos.
+                    The triplet mAP and F1-score will be used to quantify model performance. The evaluation is performed at the full Instrument–Verb–Target (IVT) level, with metrics computed per video and subsequently aggregated across videos.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="p-4 bg-secondary rounded-lg">
-                      <h4 className="font-semibold text-foreground mb-2">Primary Metric</h4>
+                      <h4 className="font-semibold text-foreground mb-2">Triplet mAP</h4>
                       <p className="text-sm text-muted-foreground">
                         Mean Average Precision (mAP) for triplet recognition, computed following ivtmetrics
                       </p>
                     </div>
                     <div className="p-4 bg-secondary rounded-lg">
-                      <h4 className="font-semibold text-foreground mb-2">Complementary Metric</h4>
+                      <h4 className="font-semibold text-foreground mb-2">F1-score</h4>
                       <p className="text-sm text-muted-foreground">
-                        Macro-F1 score, with targeted analysis on rare triplets and phase-wise performance breakdowns
+                        F1-score for triplet recognition, with targeted analysis on rare triplets and phase-wise performance breakdowns
                       </p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Component-wise performance (Instrument, Verb, Target) will be derived from IVT predictions for interpretability. Rankings are based on descending triplet mAP.
+                    Component-wise performance (Instrument, Verb, Target) will be derived from IVT predictions for interpretability. Submissions will be ranked in descending order based on triplet mAP + F1-score.
                   </p>
                 </CardContent>
               </Card>

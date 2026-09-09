@@ -13,7 +13,7 @@ Official site for the MultiBypass Surgical Action Triplet Challenge.
 - **Task:** Online surgical action triplet recognition (instrument, verb, target) for Roux-en-Y gastric bypass.
 - **Dataset:** 40 videos, 4 centers, 85 triplet classes.
 - **Splits:** Training (16), **Future Public Test Set** (9), **Hidden Test Set** (15 across 3 centers).
-- **Evaluation:** Triplet mAP (primary) and macro-F1; causal/online only (no future frames).
+- **Evaluation:** Triplet mAP and F1-score quantify model performance; submissions are ranked in descending order by triplet mAP + F1-score. Causal/online only (no future frames).
 - **Event:** MICCAI 2026 — October 4–8, ADNEC Centre, Abu Dhabi.
 
 <p align="center">
