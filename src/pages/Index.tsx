@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Calendar, Trophy, Users, ArrowRight, MapPin, Newspaper, ExternalLink } from "lucide-react";
+import { Calendar, Trophy, Users, ArrowRight, MapPin, Newspaper, ExternalLink, Clock, Download } from "lucide-react";
 import Layout from "@/components/Layout";
 import banner from "@/assets/banner.png";
 import tripletImg from "@/assets/triplet-illustration.png";
@@ -39,10 +39,53 @@ function useCountdown(target: Date) {
 }
 
 const news = [
+{ date: "September 24, 2026", text: "The evaluation has been completed, and the top three teams have been contacted." },
 { date: "August 3, 2026", text: "The MultiBypass-4C-T40 dataset paper is now available on arXiv.", href: "https://arxiv.org/abs/2608.02188" },
 { date: "July 24, 2026", text: "Submission compute limits are now available: 1 × NVIDIA A100 (80 GB), 16 logical CPUs, 32 GB RAM, an 8-hour runtime limit, and a 10 GB maximum container image size." },
 { date: "April 1, 2026", text: "Registrations are now open. Teams can submit their registration using the official form." },
 { date: "February 2026", text: "Challenge proposal accepted at MICCAI 2026" }];
+
+const program = [
+  {
+    time: "16:00 - 16:30",
+    title: "Challenge Overview",
+    details: [
+      "Motivation and background",
+      "From LapChole to MultiBypass triplet recognition",
+      "Dataset overview",
+      "Task definition",
+      "Submission setup and evaluation metrics",
+    ],
+  },
+  {
+    time: "16:30 - 17:00",
+    title: "Participant Lightning Presentations",
+    details: ["15 teams", "2 minutes per team", "2-3 slides maximum"],
+  },
+  {
+    time: "17:00 - 17:05",
+    title: "Overall Results",
+    details: ["Summary of overall results", "Announcement of teams below the top three"],
+  },
+  {
+    time: "17:05 - 17:50",
+    title: "Top-3 Results and Presentations",
+    details: [
+      "Announcement of third, second, and first place with triplet scores",
+      "Award ceremony and photos",
+      "5-7 minute presentation per team, followed by 3 minutes of Q&A",
+    ],
+  },
+  {
+    time: "17:50 - 18:00",
+    title: "Challenge Analysis and Closing Remarks",
+    details: [
+      "Analysis of submitted methods and overall performance trends",
+      "Sample qualitative visualizations",
+      "Conclusion and future perspectives",
+    ],
+  },
+];
 
 
 const logos = [
@@ -166,6 +209,76 @@ const Index = () => {
                 <strong className="text-foreground">MultiSAT session</strong> · Sunday, September 27 · 16:00–18:00 · Schuman (U)
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MultiSAT Program */}
+      <section className="relative overflow-hidden border-y border-border bg-background py-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10" aria-hidden="true" />
+        <div className="container relative mx-auto px-4">
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+              <div className="max-w-3xl">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-primary">MultiSAT · MICCAI 2026</p>
+                <h2 className="mb-4 text-4xl font-bold text-foreground">Challenge Program</h2>
+                <p className="text-lg text-muted-foreground">
+                  Join us for an afternoon of challenge insights, participant presentations, results, and awards.
+                </p>
+              </div>
+              <Button variant="outline" asChild className="w-fit shrink-0">
+                <a href={`${import.meta.env.BASE_URL}MultiBypassTriplets2026_schedule.pdf`} download>
+                  <Download className="mr-2 h-4 w-4" />
+                  Download PDF
+                </a>
+              </Button>
+            </div>
+
+            <div className="mb-8 grid gap-4 sm:grid-cols-2">
+              <div className="flex items-center gap-4 rounded-xl border border-primary/20 bg-card/80 p-5">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/15">
+                  <Calendar className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Date</p>
+                  <p className="font-semibold text-foreground">Sunday, September 27, 2026</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 rounded-xl border border-primary/20 bg-card/80 p-5">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/15">
+                  <MapPin className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Venue</p>
+                  <p className="font-semibold text-foreground">Schuman (U), Strasbourg, France</p>
+                </div>
+              </div>
+            </div>
+
+            <ol className="overflow-hidden rounded-2xl border border-border bg-card/70 shadow-2xl shadow-black/10">
+              {program.map((session, index) => (
+                <li
+                  key={session.time}
+                  className={`grid gap-4 p-6 sm:grid-cols-[180px_1fr] md:p-7 ${index < program.length - 1 ? "border-b border-border" : ""}`}
+                >
+                  <div className="flex items-start gap-3 text-primary">
+                    <Clock className="mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="font-semibold tabular-nums">{session.time}</span>
+                  </div>
+                  <div>
+                    <h3 className="mb-3 text-xl font-semibold text-foreground">{session.title}</h3>
+                    <ul className="grid gap-2 text-base text-muted-foreground md:grid-cols-2">
+                      {session.details.map((detail) => (
+                        <li key={detail} className="flex gap-2">
+                          <span className="mt-[0.7em] h-1.5 w-1.5 shrink-0 rounded-full bg-primary/70" aria-hidden="true" />
+                          <span>{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
